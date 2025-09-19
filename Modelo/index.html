@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterClasses</title> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      html {
+        font-size: 14px;
+      }
+
+      @media (min-width: 768px) {
+        html {
+          font-size: 16px;
+        }
+      }
+
+      .btn:focus,
+      .btn:active:focus,
+      .btn-link.nav-link:focus,
+      .form-control:focus,
+      .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+      }
+
+      html {
+        position: relative;
+      }
+ 
+
+                                                                       /* FUNDO EM DEGRADE */
+
+
+      body { 
+        background: linear-gradient(
+          135deg,
+          #ffffff,                                                              /*cor 1*/
+          #ffffff                                                              /*cor 2*/
+        ); /* lilás -> azul */
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      h1,
+      h2 {
+        color: #000;
+      }
+
+      .lead {
+        color: #000;                                                 /* Cor do texto descritivo */
+      }
+
+      .btn-primary {
+        background-color: #6a11cb;
+        border: none;
+        color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background-color: #2575fc;
+      }
+
+      .card {
+        border-radius: 1rem;
+        transition: transform 0.2s ease-in-out;
+        background-color: #ffffff;
+        cursor: pointer;
+        text-decoration: none; /* remove underline caso seja <a> */
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      }
+
+      .card-body h5,
+      .card-body p {
+        color: #6a11cb;
+      }
+
+      .text-primary {
+        color: #2575fc !important;
+      }
+
+      .text-success {
+        color: #6a11cb !important;
+      }
+
+      .text-warning {
+        color: #000 !important;
+      }
+
+      .text-info {
+        color: #ffffff !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Interclasses</a>  
+          <button class="navbar-toggler" href="#">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+          >
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Privacy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <main role="main" class="pb-3">
+        <div class="container py-5">
+            
+          <!-- Cabeçalho -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">      
+              <i class="bi bi-trophy-fill text-warning"></i> INTERCLASSES              <!-- MUDA O NOME DA PÁGINA -->
+            </h1>
+            <p class="lead fw-semibold">
+              Participe da competição entre turmas e mostre seu espírito de
+              equipe!
+            </p>
+            <a href="#" class="btn btn-primary btn-lg mt-3 px-4 shadow">
+              INICIAR
+            </a>
+          </div>
+
+          <!-- Seção Como Funciona -->
+          <div class="text-center mb-4">
+            <h2 class="fw-bold text-white">COMO FUNCIONA</h2>
+          </div>
+
+          <div class="row text-center">
+            <!-- Cadastrar -->
+            <div class="col-12 col-md-3 mb-4">
+              <a href="#" class="card shadow-sm border-0 h-100 d-block">
+                <div class="card-body">
+                  <i
+                    class="bi bi-person-plus-fill display-4 text-primary mb-3"
+                  ></i>
+                  <h5>Cadastrar</h5>
+                  <p>Inscreva-se para participar das competições.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Entrar em Times -->
+            <div class="col-12 col-md-3 mb-4">
+              <a href="#" class="card shadow-sm border-0 h-100 d-block">
+                <div class="card-body">
+                  <i class="bi bi-people-fill display-4 text-success mb-3"></i>
+                  <h5>Entrar em Times</h5>
+                  <p>Monte seu time com os colegas da sua turma.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Competir -->
+            <div class="col-12 col-md-3 mb-4">
+              <a href="#" class="card shadow-sm border-0 h-100 d-block">
+                <div class="card-body">
+                  <i class="bi bi-flag-fill display-4 text-warning mb-3"></i>
+                  <h5>Competir</h5>
+                  <p>
+                    Participe das atividades e acumule pontos para sua turma.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Celebrar -->
+            <div class="col-12 col-md-3 mb-4">
+              <a href="#" class="card shadow-sm border-0 h-100 d-block">
+                <div class="card-body">
+                  <i
+                    class="bi bi-emoji-smile-fill display-4 text-info mb-3"
+                  ></i>
+                  <h5>Celebrar</h5>
+                  <p>Comemore as vitórias com sua turma e amigos.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-light py-3">
+      <div class="container text-center">
+        &copy; 2025 - InterClasses -
+        <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
